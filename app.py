@@ -16,6 +16,7 @@ if resposta.status_code == 200:
     tipos = [t['type']['name'] for t in dados['types']]
 
     print(f"Pokémon: {dados['name']}")
+    print(f"Nº Pokédex: {dados['id']}")
     print(f"Altura: {dados['height']}")
     print(f"Peso: {dados['weight']}")
     print(f"Tipo(s): {', '.join(tipos)}")
